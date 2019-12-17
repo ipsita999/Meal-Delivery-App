@@ -5,7 +5,7 @@ import Nav from './shared/Nav'
 
 const Container = () => {
         return (
-        <div>Hello World
+        <div>
                 <Nav />
                 <Routes />
                 <Footer />
