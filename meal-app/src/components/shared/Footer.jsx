@@ -1,21 +1,27 @@
 import React from 'react'
+import fb from '../../assets/FACEBOOK.png'
+import insta from '../../assets/INSTAGRAM.png'
+import timeMeal from '../../assets/No Prep Meal logo (in yellow).png'
+import twitter from '../../assets/TWITTER.png'
 
 const Footer = () => {
     return (
         <footer>
-            <div className="left">
-                <img  width="50px" height="50px" src="https://s3-alpha-sig.figma.com/img/fd6a/3660/f67d81782087880e05fb511ba3265d80?Expires=1577664000&Signature=XwUKsoF-u1pbnlLwD-2JGoQXu92L7q0vR5pZDnNq01aKg9x326UndJ6Ikt9rrFQTzP63bdtIbGvVu6nZ9YhzGYz~R5ItDuu2Mg7FQsWRBtgSu2KLxOzyDYXGXftYZLI-0B4iBhy5r5l2BHxbOSvSu0yx54TrWSz5E5A5-ZasEzeNgezo3BUJVu6iSJG0aFxghe35iSLJ4eRiN3YqjrbuAFBKhnJE-QP-shv5GzWZcVqxNCDuPEBs3hQLOs14~NXPsufxluvmNPjjHWmO5f1jQdhtSL-oYOqaHa2LgkqfItw34t8jdwfia4rgqOkU0iCRknFiR1EY45~B~zi07zIFJg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""/>
+            <div className="footer left">
+                <img src={timeMeal} alt="" />
                 <p>NO PREP MEALS</p>
             </div>
-            <div className="mid">
+            <div className="footer mid">
                 <div className="media-icon">
-                    <img src="https://drive.google.com/open?id=1oSqzAHkMiHp9vm_pwQj8Utbhajim4pom" alt=""/>
-                    <img src="https://drive.google.com/open?id=1XfbOvybq1bIE-e3QfBqRoFcw9zaPg5JF" alt=""/>
-                    <img src="https://drive.google.com/open?id=1KMCdtBGJcwaBmz9w_LOwNoO-MXAX8qZg" alt=""/>
+                    <img src={fb} alt="" />
+                    <img src={twitter} alt="" />
+                    <img src={insta} alt="" />
                 </div>
-                <div className="copyright">Copyright © 2019 No Prep Meals ® </div>
+                <div className="copyright">
+                    <p>Copyright © 2019 No Prep Meals ® </p>
+                </div>
             </div>
-            <div className="right">
+            <div className="footer right">
                 <p>Contact</p>
                 <p>support@noprepmeals.com</p>
                 <p>+1(800)-457-8793</p>
