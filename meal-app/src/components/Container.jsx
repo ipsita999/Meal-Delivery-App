@@ -6,6 +6,7 @@ import Nav from './shared/Nav'
 const Container = () => {
         return (
         <div>
+                <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"></link>
                 <Nav />
                 <Routes />
                 <Footer />

@@ -7,3 +7,39 @@
 .nav-link {
   text-decoration: none;
 }
+
+/* Start Footer */
+
+footer {
+  font-family: Raleway;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3D415A;
+  height: 200px;
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer.left img {
+  height: 60px;
+  width: 94px;
+}
+.footer.mid {
+  flex-direction: column;
+  justify-content: center;
+}
+.footer.mid img {
+  width: 27px;
+  height:27px;
+  margin: 0 15px;
+}
+.footer.right {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer.right p {
+  margin: 0 16px 16px 0;
+}
