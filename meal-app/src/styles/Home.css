@@ -8,7 +8,7 @@
 .carousel {
     display: flex;
 }
-img {
+.card img {
     width: 100px;
 }
 .card p {
