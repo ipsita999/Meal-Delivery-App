@@ -1,4 +1,4 @@
-[
+export const data = [
 	{
     "title": "Roasted Salmon with Green Beans and Tomatoes",
     "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roasted-salmon-with-green-beans-and-tomatoes-ghk-1534278448.jpg?crop=1xw:1xh;center,top&resize=980:*",
@@ -34,7 +34,7 @@
 "2 1/2 lb.tomatoes (roughly chopped)",
 "2 1/2 c. water",
 "2 pocketless pitas",
- "For Topping: 1 tbsp. brown sugar", 
+"For Topping: 1 tbsp. brown sugar", 
 "2 tbsp. butter or olive oil",
 "2 tbsp. finely shredded unsweetened coconut",
 "2 tbsp. cilantro"],
@@ -67,7 +67,7 @@
     "directions": "Heat oven to 425°F. On large rimmed baking sheet, toss garlic, beans, tomatoes, olives and anchovies (if using) with 1 tablespoon oil and 1/4 teaspoon pepper. Roast until vegetables are tender and beginning to brown, 12 to 15 minutes. Meanwhile, heat remaining tablespoon oil in large skillet over medium heat. Season salmon with 1/4 teaspoon each salt and pepper and cook until golden brown and opaque throughout, 4 to 5 minutes per side. Serve with vegetables and yogurt if desired."
 	},
 	
-			{
+		{
     "title": "Grilled Steak Tortilla Salad",
     "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/low-calorie-meals-grilled-steak-tortilla-salad-ghk-0528-1556308536.jpg?crop=1xw:1xh;center,top&resize=980:*",
     "calories": 340,
@@ -111,9 +111,9 @@
 "Kosher salt",
 "Lettuce leaves", "cooked sticky rice", "scallions", "red chiles", "chopped peanuts for serving"],
 "description": "This isn't your usual lettuce wrap. Bring your steak to life with a special marinade and top it off with chopped peanuts before eating.",
- "directions": "In medium bowl, combine pineapple juice, garlic, soy sauce, red pepper flakes, ginger, honey, and sesame oil. Thinly slice frozen meat, add to marinade and toss to coat. Let marinate 30 minutes or cover and refrigerate up to 3 hours. Remove from refrigerator 30 minutes before cooking.Heat large stainless steel skillet on medium-high. Add 1 tablespoon canola oil. Transfer half of beef mixture to skillet, arrange in even layer, season with 1/4 teaspoon salt and cook without moving until lightly browned, 1 minute. Toss beef and continue to cook until just cooked through and crisp at edges, 2 minutes. Transfer to plate. Repeat with remaining tablespoon oil and beef. Serve immediately with lettuce leaves, sticky rice, scallions, chiles, and peanuts, if desired."
+"directions": "In medium bowl, combine pineapple juice, garlic, soy sauce, red pepper flakes, ginger, honey, and sesame oil. Thinly slice frozen meat, add to marinade and toss to coat. Let marinate 30 minutes or cover and refrigerate up to 3 hours. Remove from refrigerator 30 minutes before cooking.Heat large stainless steel skillet on medium-high. Add 1 tablespoon canola oil. Transfer half of beef mixture to skillet, arrange in even layer, season with 1/4 teaspoon salt and cook without moving until lightly browned, 1 minute. Toss beef and continue to cook until just cooked through and crisp at edges, 2 minutes. Transfer to plate. Repeat with remaining tablespoon oil and beef. Serve immediately with lettuce leaves, sticky rice, scallions, chiles, and peanuts, if desired."
 	},
-    	{
+    {
     "title": "Chipotle Lentil Chili",
     "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/38/1474304680-ghk090115yk-chipotle-lentil.jpg?crop=0.874xw:0.875xh;0.124xw,0&resize=980:*",
     "calories": 310,
@@ -138,9 +138,9 @@
 "Cilantro (for serving)",
 "Tortilla Chips (for serving)"],
 "description": "This guilt-free chili is the perfect addition to your game day feast.",
- "directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes: pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 minutes. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
+"directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes: pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 minutes. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
 	},
-    	{
+    {
     "title": "Zucchini Ravioli",
     "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190419-zucchini-ravioli-vertical-223-1558016038.jpg?crop=0.9997369113391213xw:1xh;center,top&resize=980:*",
     "calories": 220,
@@ -165,9 +165,9 @@
 "Cilantro (for serving)",
 "Tortilla Chips (for serving)"],
 "description": "This guilt-free chili is the perfect addition to your game day feast.",
- "directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes; pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 minutes. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
+"directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes; pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 minutes. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
 	},
-    	{
+    {
     "title": "Chicken Souvlaki Skewers",
     "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/29/1500576902-anna-williams-chicken-souvlaki-skewers-0817.jpg?crop=1xw:0.99975xh;center,top&resize=980:*",
     "calories": 220,
@@ -188,7 +188,7 @@
     "1/2 c. dill, chopped",
     "4 pitas, warmed"],
 "description": "Because eating chicken on skewers is way more fun.",
- "directions": "Heat grill on medium-high. Toss chicken with 1 tablespoon oil, then coriander, oregano and 1/4 teaspoon each kosher salt and pepper. Thread onto skewers. Place tomatoes and garlic on large piece heavy-duty foil. Sprinkle with 1 tablespoon oil and 1/4 teaspoon each kosher salt and pepper. Fold and crimp foil to form pouch. Place pouch and skewers on grill. Cook, shaking pouch and turning skewers occasionally, until chicken is cooked, 8 to 10 minutes. Brush the chicken with a tablespoon of lemon juice before removing from stove. Meanwhile, in bowl, toss lettuce, onions and dill with remaining lemon juice, a tablespoon of oil, and a quater teaspoon of salt and pepper. Serve chicken, tomatoes and salad with pitas and lemon."
+"directions": "Heat grill on medium-high. Toss chicken with 1 tablespoon oil, then coriander, oregano and 1/4 teaspoon each kosher salt and pepper. Thread onto skewers. Place tomatoes and garlic on large piece heavy-duty foil. Sprinkle with 1 tablespoon oil and 1/4 teaspoon each kosher salt and pepper. Fold and crimp foil to form pouch. Place pouch and skewers on grill. Cook, shaking pouch and turning skewers occasionally, until chicken is cooked, 8 to 10 minutes. Brush the chicken with a tablespoon of lemon juice before removing from stove. Meanwhile, in bowl, toss lettuce, onions and dill with remaining lemon juice, a tablespoon of oil, and a quater teaspoon of salt and pepper. Serve chicken, tomatoes and salad with pitas and lemon."
 	}
 ]
 
