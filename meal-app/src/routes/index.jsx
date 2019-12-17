@@ -10,17 +10,17 @@ const Routes = ({ items }) => (
         <Route
             exact
             path="/"
-            render={props => <Home />}
+            render={props => <Home {...props} />}
         />
         <Route
             exact
             path="/results"
-            render={props => <Items />}
+            render={props => <Items {...props} />}
         />
         <Route
             exact
             path="/results/:id"
-            render={props => <Recipe />}
+            render={props => <Recipe {...props}/>}
         />
         
     </Switch>
