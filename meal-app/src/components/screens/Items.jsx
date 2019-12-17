@@ -1,6 +1,8 @@
 import React from 'react'
+import Search from '../shared/Search'
 
 const Items = (props) => {
+
 
 const renderItems = () => {
     return props.location.state.items.map(item => (
@@ -12,6 +14,8 @@ const renderItems = () => {
     console.log(props)
     return (
         <div>{renderItems()}</div>
+
+
     )
 }
 

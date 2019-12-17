@@ -20,7 +20,7 @@ const Routes = ({ items }) => (
         <Route
             exact
             path="/results/:id"
-            render={props => <Recipe {...props}/>}
+            render={props => <Recipe {...props} />}
         />
         
     </Switch>
