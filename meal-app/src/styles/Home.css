@@ -1,0 +1,20 @@
+.slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: Raleway;
+}
+.carousel {
+    display: flex;
+}
+img {
+    width: 100px;
+}
+.card p {
+    border: 3px solid #DE7A63;
+    font-size: 20px;
+}
+h4 {
+    text-align: center;
+}
