@@ -22,9 +22,6 @@ footer {
   display: flex;
   align-items: center;
 }
-.footer.left p{
-  
-}
 .footer.left img {
   height: 60px;
   width: 94px;
