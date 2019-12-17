@@ -9,9 +9,9 @@ const Footer = () => {
             </div>
             <div className="mid">
                 <div className="media-icon">
-                    <img src="src/assets/fb.png" alt=""/>
-                    <img src="src/assets/twitter.png" alt=""/>
-                    <img src="src/assets/insta.png" alt=""/>
+                    <img src="https://drive.google.com/open?id=1oSqzAHkMiHp9vm_pwQj8Utbhajim4pom" alt=""/>
+                    <img src="https://drive.google.com/open?id=1XfbOvybq1bIE-e3QfBqRoFcw9zaPg5JF" alt=""/>
+                    <img src="https://drive.google.com/open?id=1KMCdtBGJcwaBmz9w_LOwNoO-MXAX8qZg" alt=""/>
                 </div>
                 <div className="copyright">Copyright © 2019 No Prep Meals ® </div>
             </div>
