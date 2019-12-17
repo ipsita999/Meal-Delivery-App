@@ -1,0 +1,14 @@
+.slide {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.carousel {
+    display: flex;
+}
+.one {
+    background-color: blue;
+}
+.two {
+    background-color: red;
+}
