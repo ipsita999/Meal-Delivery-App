@@ -24,9 +24,9 @@ class Search extends React.Component {
             : null)
         console.log(this.state.items)
     }
-       catch (error) {
-           console.error(error)
-       }
+    catch (error) {
+        console.error(error)
+    }
     }
 
     render() {
