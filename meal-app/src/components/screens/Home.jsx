@@ -4,6 +4,7 @@ import '../../styles/Home.css'
 import { data } from '../../data/data.js'
 import leftArrow from '../../assets/Arrow-left.png'
 import rightArrow from '../../assets/Arrow-right.png'
+import step1 from '../../assets/STEP1-SEARCH.png'
 
 class Home extends React.Component {
     constructor(props) {
@@ -20,6 +21,9 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+                <div className='step-images'>
+                    <img src={step1}/>
+                </div>
                 <Search />
                 <h4>Top Recipes</h4>
                 <div className='carousel'>
