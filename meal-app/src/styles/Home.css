@@ -21,13 +21,43 @@
     width: 200px;
     margin: 0;
     box-sizing: border-box;
+    padding: 5px;
 }
 h4 {
     text-align: center;
     font-family: Raleway;
     font-size: 40px;
     font-weight: 800;
+    color: #3D415A;
 }
 .arrow {
     border: none;
+}
+.arrow img {
+    width: 40px;
+}
+.steps {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.steps img {
+    width: 200px;
+}
+.steps h3 {
+    color: #83B29B;
+    font-weight: 900;
+}
+h2 {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3D415A;
+}
+.steps .between {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 70px;
 }

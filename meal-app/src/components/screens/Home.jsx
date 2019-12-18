@@ -4,6 +4,10 @@ import '../../styles/Home.css'
 import { data } from '../../data/data.js'
 import leftArrow from '../../assets/Arrow-left.png'
 import rightArrow from '../../assets/Arrow-right.png'
+import step1 from '../../assets/STEP1-SEARCH.png'
+import step2 from '../../assets/STEP2-RECIPE.png'
+import step3 from '../../assets/STEP3-INGREDIENTS.png'
+import arrow from '../../assets/arrow.png'
 
 class Home extends React.Component {
     constructor(props) {
@@ -20,10 +24,30 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+                <h2>Cook Faster With Prepped Ingredients</h2>
+                <div className='steps'>
+                    <div className='step-1'>
+                        <img src={step1} alt='step one'/>
+                        <h3>STEP 1</h3>
+                        <p>Search For Recipe</p>
+                    </div>
+                    <img className='between' src={arrow} alt='arrow'/>
+                    <div className='step-2'>
+                        <img src={step2} alt='step two'/>
+                        <h3>STEP 2</h3>
+                        <p>Select Recipe</p>
+                    </div>
+                    <img className='between' src={arrow} alt='arrow'/>
+                    <div className='step-3'>
+                        <img src={step3} alt='step three'/>
+                        <h3>STEP 3</h3>
+                        <p>Order Ingredients</p>
+                    </div>
+                </div>
                 <Search />
                 <h4>Top Recipes</h4>
                 <div className='carousel'>
-                    <button className='arrow' onClick={this.handleClick}><img src={leftArrow}/></button>
+                    <button className='arrow' onClick={this.handleClick}><img src={leftArrow} alt='arrow'/></button>
                     {this.state.isActive ? 
                     <div className='slide one'>
                         <div className='card'>
@@ -61,7 +85,7 @@ class Home extends React.Component {
                             <p>{data[7].title}</p>
                         </div>
                     </div>}
-                    <button className='arrow' onClick={this.handleClick}><img src={rightArrow}/></button>
+                    <button className='arrow' onClick={this.handleClick}><img src={rightArrow} alt='arrow'/></button>
                 </div>
             </div>
         )

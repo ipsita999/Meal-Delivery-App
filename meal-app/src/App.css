@@ -3,9 +3,26 @@
   justify-content: space-around;
   align-items: center;
   background-color: #F4F1DF;
+  color: #3D415A;
+  font-weight: bold;
+  font-size: 18px;
+  height: 69px;
+}
+.nav-bar p {
+  flex: 1;
+}
+.nav-bar img {
+  width: 50px;
+  margin:0 20px;
+}
+.nav-bar .cart {
+  width: 30px;
 }
 .nav-link {
   text-decoration: none;
+  color: #3D415A;
+  font-size: 24px;
+  flex: 3;
 }
 
 /* Start Footer */
