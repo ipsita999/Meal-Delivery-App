@@ -7,14 +7,27 @@
 }
 .carousel {
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+
 }
 .card img {
-    width: 100px;
+    width: 200px;
+    margin: 0;
 }
 .card p {
     border: 3px solid #DE7A63;
-    font-size: 20px;
+    font-size: 16px;
+    width: 200px;
+    margin: 0;
+    box-sizing: border-box;
 }
 h4 {
     text-align: center;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 800;
+}
+.arrow {
+    border: none;
 }
