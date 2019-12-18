@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/Recipe.css'
 
 class Recipe extends React.Component {
-    
+
     constructor(props) {
         super(props);
         this.state = {
@@ -75,7 +75,7 @@ class Recipe extends React.Component {
                             <h3>Name</h3>
                             <div className="item-top">
                                 <div>
-                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer"/><p>props.totalTime</p>
+                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>props.totalTime</p>
                                 </div>
                                 <div>
                                     <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="person" /><p>props.yeild</p>
@@ -105,8 +105,9 @@ class Recipe extends React.Component {
                     <div className="checkingridents">
                         {this.renderChecks()}
                     </div>
-                    <button className="to-cart">ADD TO CART</button>
-
+                    <div className="cart-button">
+                        <button className="to-cart">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
         )

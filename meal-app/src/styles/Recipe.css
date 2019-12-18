@@ -1,6 +1,3 @@
-* {
-    border: 1px solid red;
-}
 /* Results Container */
 .results {
     display: flex;
@@ -74,6 +71,22 @@ ol li span {
     color: #82B29B;
     text-align: center;
 }
-.ingredients-list {
-    
+.ingredients-list div input {
+    margin-right: 28px;
+    color: #DE7A63;
+}
+.cart-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.to-cart {
+    background-color: #DE7A73;
+    color: white;
+    border-radius: 3px;
+    width: 250px;
+    height: 44px;
+    font-size: large;
+    font-weight: bolder;
+    align-self: flex-end;
 }
