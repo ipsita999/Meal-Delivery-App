@@ -1,4 +1,74 @@
+/* * {
+    border: 1px solid red;
+} */
+/* Results Container */
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Raleway;
+    font-size: 21px;
+    margin: 0 17px;
+}
+/* Main Area */
+.main {
+    flex: 3;
+}
+/* Aside */
+.ingredient-list {
+    flex: 1;
+}
+/* container for top section of main */
 .item-view {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+/* Item name */
+.item-info h3 {
+    font-size: 30px;
+}
+/* time and serving size */
+.item-top {
+    display: flex;
+}
+.item-top div {
+    display: flex;
+    align-items: center;
+}
+.timer-icon {
+    width: 24px;
+    height: 28.57px;
+}
+.person-icon {
+    width: 16px;
+    height: 24.61px;
+}
+/* list items for tools */
+.tools-needed * {
+    margin: 0;
+}
+.tools-needed p {
+    margin-left: 22px;
+}
+/* Instructions */
+.item-description {
+    margin-left: 40px;
+}
+.item-description h2 {
+    color: #83b29b;
+}
+
+/* Removing the default ol numbers and adding custom ones */
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+ol li:before {
+    color: #DE7A63;
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-size: 21px;
+  }

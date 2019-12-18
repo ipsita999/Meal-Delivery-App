@@ -3,13 +3,10 @@ import '../../styles/Recipe.css'
 
 class Recipe extends React.Component {
     constructor(props) {
-        
+
         super(props);
         this.state = {
-            ingridents: [
-                {id: 1, name: 'Test', isChecked: true },
-                {id: 1, name: 'Test', isChecked: true }
-            ],
+            ingridents: [],
             instructions: [
                 'step 1',
                 'step 2',
@@ -18,6 +15,17 @@ class Recipe extends React.Component {
             ]
         }
     }
+
+    componentDidMount() {
+        ['bread', 'avocado', 'salt'].map((item, index) => {
+            this.setState(state => {
+                state.ingridents.push({name: item, isChecked: true})
+                return state
+            }
+            )
+        })
+    }
+
 
     handleCheck = index => {
         this.setState(state => {
@@ -29,15 +37,17 @@ class Recipe extends React.Component {
         if (this.state.ingridents.length) {
             return this.state.ingridents.map((box, index) => {
                 return (
-                    <li key={box.id + index}>
+                    <div key={index}>
                         <input
+                            id={1 + index}
                             type="checkbox"
                             value={this.state.ingridents[index].isChecked}
                             checked={this.state.ingridents[index].isChecked}
                             onChange={() => this.handleCheck(index)}
+                            name={box.name}
                         />
-                        <h3>{`${box.name} ${index + 1}`}</h3>
-                    </li>
+                        <label htmlFor={1+ index}>{box.name}</label>
+                    </div>
                 )
             })
         }
@@ -50,19 +60,38 @@ class Recipe extends React.Component {
     }
     render() {
         return (
-            <>
-                <div className="item-view">
-                    <img src="https://s3-alpha-sig.figma.com/img/b2ce/086b/868c85535386a51bc6ee5f53010cfeb6?Expires=1577664000&Signature=JpiUqPzyMuTTDMbNN-9TW3IPw2ZK-w0afmHQhl3Q8clyqDJvdHgDc2bgZgy5lm3lA0sfkARlvPJPN4z7mk2PN88xK2~ksduJH0VHdKlZOhAsgi56UfFrRnahq82CaPk3P8~SLCgluRexeCqt2ugjgmkVUqI2n9Eg9SBjVw3IX243g3LjxKs-wDFokaXHqNBWhSDjne8M0esj~2i7D6X10b7S2jOwMXEoZcArewleMPkP8c3iM-diyYVVYA2GrrSZF~H-e~9FTiYcvi2CzbzAiUDT5Z5QZY5~dC84J7mIX~jRMZS9AXhEaGC7IEKgcR3tY2OZECADfllnveiNiEWLzQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" />
-                    <div className="item-info">
-                        <h3>Name</h3>
-                        <p>time: </p>
+            <div className="results">
+                <div className="main">
+
+
+                    <div className="item-view">
+                        <img src="https://s3-alpha-sig.figma.com/img/b2ce/086b/868c85535386a51bc6ee5f53010cfeb6?Expires=1577664000&Signature=JpiUqPzyMuTTDMbNN-9TW3IPw2ZK-w0afmHQhl3Q8clyqDJvdHgDc2bgZgy5lm3lA0sfkARlvPJPN4z7mk2PN88xK2~ksduJH0VHdKlZOhAsgi56UfFrRnahq82CaPk3P8~SLCgluRexeCqt2ugjgmkVUqI2n9Eg9SBjVw3IX243g3LjxKs-wDFokaXHqNBWhSDjne8M0esj~2i7D6X10b7S2jOwMXEoZcArewleMPkP8c3iM-diyYVVYA2GrrSZF~H-e~9FTiYcvi2CzbzAiUDT5Z5QZY5~dC84J7mIX~jRMZS9AXhEaGC7IEKgcR3tY2OZECADfllnveiNiEWLzQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" />
+                        <div className="item-info">
+                            <h3>Name</h3>
+                            <div className="item-top">
+                                <div>
+                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} /><p>props.totalTime</p>
+                                </div>
+                                <div>
+                                    <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="" /><p>props.yeild</p>
+                                </div>
+                            </div>
+                            <div className="tools-needed">
+                                <p>Tools needed:</p>
+                                <ul>
+                                    <li>11" X 6" Dish</li>
+                                    <li>Oven</li>
+                                    <li>Parchment Paper</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="item-description">
-                    <h2>Instructions</h2>
-                    <ul>
-                        {this.renderInstructions(['1', '2', '3'])}
-                    </ul>
+                    <div className="item-description">
+                        <h2>Instructions</h2>
+                        <ol>
+                            {this.renderInstructions()}
+                        </ol>
+                    </div>
                 </div>
 
                 <div className="ingredients-list">
@@ -73,7 +102,7 @@ class Recipe extends React.Component {
                     </div>
 
                 </div>
-            </>
+            </div>
         )
     }
 }
