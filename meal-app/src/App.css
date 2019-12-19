@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -68,6 +72,112 @@ footer {
   margin: 0 16px 16px 0;
 }
 
+
+.item-container {
+  font-family: Raleway;
+  font-size: 12px;
+  border:none;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 250px;
+  
+  /* height: 3px; */
+}
+.items-container {
+  /* border: 2px solid pink; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+
+  
+}
+
+.cook-time {
+  /* border: 2px solid yellow; */
+  display: flex;
+  /* margin: 2px; */
+}
+.person-icon {
+padding-right: 3px;
+}
+.rec-pic {
+  width: 100%;
+  height: 70%;
+}
+
+.info-box{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #E07A5F;
+
+}
+
+
+.searchBtn{
+  width: 320px;
+  height: 15px;
+  font-size: 120%;
+  margin-right: 1%;
+  padding: 10px 30px;
+  border: solid 2.5px black;
+
+}
+.submitBtn {
+
+  /* padding: 1px 40px; */
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 1px;
+  border: 3px solid #e07a5f;
+  font-size: 15px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  background-color: #e07a5f;
+  color: white;
+}
+
+.item-page-container {
+/* height: 100vh; */
+  
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.rec-left,
+.rec-right{
+  padding: 5px;
+
+}
+.diet-icons{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.diet-pic {
+  padding-right: 2px;
+  width: 30px;
+
+
+}
+
+
+
+
 @media only screen and (max-width: 420px) {
   .nav-bar {
     display: flex;
@@ -92,3 +202,4 @@ footer {
     position: absolute;
   }
 }
+
