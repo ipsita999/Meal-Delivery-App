@@ -6,7 +6,7 @@ class Recipe extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ingridents: [],
+            ingredients: [],
             instructions: [
                 'Preheat the oven to 425 degrees Fahrenheit.',
                 'In a large skillet over medium heat, warm the olive oil over medium heat. Once shimmering, add the carrots, bell pepper, zucchini, yellow onion, and salt. Cook, stirring every couple of minutes, until the veggies are golden on the edges, about 8 to 12 minutes.',
@@ -17,37 +17,43 @@ class Recipe extends React.Component {
                 'Top with 3 more noodles, then spread ¾ cup tomato sauce over the top (you may have a little sauce leftover) to evenly cover the noodles. Sprinkle evenly with 1 cup shredded cheese.',
                 'Wrap a sheet of parchment paper around the top of the lasagna (or cover the lasagna with aluminum foil, but don’t let the foil touch the cheese). Bake, covered, for 18 minutes, then remove the cover, rotate the pan by 180° and continue cooking for about 10 to 12 more minutes, until the top is turning spotty brown.',
                 'Remove from oven and let the lasagna cool for 15 to 20 minutes, so it has time to set and cool down to a reasonable temperature. Sprinkle additional basil over the top, then slice and serve.'
-            ]
+            ],
+            item: this.props.location.state
         }
     }
 
     componentDidMount() {
-        ['bread', 'avocado', 'salt'].map((item, index) => {
+        console.log(this)
+        this.state.item.ingredients.map((item, index) => {
             this.setState(state => {
-                state.ingridents.push({ name: item, isChecked: true })
+                state.ingredients.push({ name: item, isChecked: true })
                 return state
             }
             )
         })
+        console.log(this)
+        if (this.props.location.state.directions) {
+            this.setState({ instructions: [this.props.location.state.directions] })
+        }
     }
 
 
     handleCheck = index => {
         this.setState(state => {
-            state.ingridents[index].isChecked = !state.ingridents[index].isChecked
+            state.ingredients[index].isChecked = !state.ingredients[index].isChecked
             return state
         })
     }
     renderChecks = () => {
-        if (this.state.ingridents.length) {
-            return this.state.ingridents.map((box, index) => {
+        if (this.state.ingredients.length) {
+            return this.state.ingredients.map((box, index) => {
                 return (
                     <div key={index}>
                         <input
                             id={1 + index}
                             type="checkbox"
-                            value={this.state.ingridents[index].isChecked}
-                            checked={this.state.ingridents[index].isChecked}
+                            value={this.state.ingredients[index].isChecked}
+                            checked={this.state.ingredients[index].isChecked}
                             onChange={() => this.handleCheck(index)}
                             name={box.name}
                         />
@@ -75,10 +81,10 @@ class Recipe extends React.Component {
                             <h3>Name</h3>
                             <div className="item-top">
                                 <div>
-                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>props.totalTime</p>
+                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>{this.state.item.totalTime}</p>
                                 </div>
                                 <div>
-                                    <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="person" /><p>props.yeild</p>
+                                    <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="person" /><p>4</p>
                                 </div>
                             </div>
                             <div className="tools-needed">
@@ -102,7 +108,7 @@ class Recipe extends React.Component {
                 <div className="ingredients-list">
                     <h3>Ingredients</h3>
                     <p>Select the ingredients you need.</p>
-                    <div className="checkingridents">
+                    <div className="checkingredients">
                         {this.renderChecks()}
                     </div>
                     <div className="cart-button">

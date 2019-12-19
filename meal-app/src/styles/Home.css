@@ -61,3 +61,28 @@ h2 {
     height: 70px;
     margin-bottom: 70px;
 }
+
+/* mobile carousel */
+.carousel-container {
+    display: flex;
+}
+.arr {
+    display: flex;
+    align-content: center;
+}
+.card p span {
+    text-align: right;
+}
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+}
