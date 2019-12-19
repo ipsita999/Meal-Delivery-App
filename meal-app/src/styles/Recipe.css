@@ -1,4 +1,6 @@
-
+* {
+    border: 1px solid red;
+}
 /* Results Container */
 .results {
     display: flex;
@@ -21,6 +23,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    flex-wrap: wrap;
 }
 .item-info {
     margin-left: 51px;
@@ -28,6 +31,7 @@
 /* Item name */
 .item-info h3 {
     font-size: 30px;
+    max-width: 300px;
 }
 /* time and serving size */
 .item-top {

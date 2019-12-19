@@ -1,20 +1,18 @@
 import React from 'react'
 import Search from '../shared/Search'
+import {withRouter} from 'react-router-dom'
 import './Items.css'
 
 const Items = (props) => {
 
     const handleSubmit = (item, id) => {
-        props.history.push(`results/${id}`, item)
+        console.log(item)
+        props.history.push(`/results/${id}`, item)
     }
 
     const renderItems = () => {
         return props.location.state.items.map( (item, index) => (
             <>
-<<<<<<< HEAD
-                <h3>{item.recipe.label}</h3>
-                <img src={item.recipe.image} alt=""/>
-=======
                 <div className='item-container' onClick={ () => {handleSubmit(item.recipe, index)}}>
                     <img className = "rec-pic" src={item.recipe.image} />
                     <div className ='info-box'>
@@ -31,7 +29,6 @@ const Items = (props) => {
                     </div>
                     </div>
                 </div>
->>>>>>> 5fd96e11f1c94c231965acea5a38e0e707061333
             </>
         ))
     }
@@ -56,4 +53,4 @@ const Items = (props) => {
     )
 }
 
-export default Items
+export default withRouter(Items)

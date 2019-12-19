@@ -1,6 +1,6 @@
 export const data = [
     {
-        "title": "Roasted Salmon with Green Beans and Tomatoes",
+        "label": "Roasted Salmon with Green Beans and Tomatoes",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/roasted-salmon-with-green-beans-and-tomatoes-ghk-1534278448.jpg?crop=1xw:1xh;center,top&resize=980:*",
         "calories": 330,
         "totalTime": "20 mins",
@@ -8,13 +8,13 @@ export const data = [
         "fats": "15 grams",
         "carbs": "15 grams",
         "type": "nonvegetarian",
-        "ingredients": ["6 cloves garlic(smashed)", "1 1/4 green beans(trimmed)", "3 anchovy fillets(chopped)", "2 tbsp. olive oil", "Kosher salt/pepper", "1 1/4 lb.skinless salmon fillet", "Greek yogurt (for serving)"],
+        "ingredientLines": ["6 cloves garlic(smashed)", "1 1/4 green beans(trimmed)", "3 anchovy fillets(chopped)", "2 tbsp. olive oil", "Kosher salt/pepper", "1 1/4 lb.skinless salmon fillet", "Greek yogurt (for serving)"],
         "description": "Salmon and colorful veggies are the perfect pairing for a meal that will keep you full all-day.",
         "directions": "Heat oven to 425°F. On large rimmed baking sheet, toss garlic, beans, tomatoes, olives and anchovies (if using) with 1 tablespoon oil and 1/4 teaspoon pepper. Roast until vegetables are tender and beginning to brown, 12 to 15 mins.Meanwhile, heat remaining tablespoon oil in large skillet over medium heat. Season salmon with 1/4 teaspoon each salt and pepper and cook until golden brown and opaque throughout, 4 to 5 mins per side. Serve with vegetables and yogurt if desired."
     },
 
     {
-        "title": "Spiced Fresh Tomato Soup With Sweet and Herby Pitas",
+        "label": "Spiced Fresh Tomato Soup With Sweet and Herby Pitas",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiced-tomato-soup-sweet-herbed-pitas-ghk-1538685691.jpg?crop=1xw:0.99975xh;center,top&resize=980:*",
         "calories": 325,
         "totalTime": "25 mins",
@@ -43,7 +43,7 @@ export const data = [
     },
 
     {
-        "title": "Vegetable Ramen with Mushrooms and Bok Choy",
+        "label": "Vegetable Ramen with Mushrooms and Bok Choy",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/low-calorie-meals-vegetable-ramen-ghk090118-1556295778.png?crop=0.789xw:0.807xh;0.107xw,0.0290xh&resize=980:*",
         "calories": 300,
         "totalTime": "23 mins",
@@ -68,7 +68,7 @@ export const data = [
     },
 
     {
-        "title": "Grilled Steak Tortilla Salad",
+        "label": "Grilled Steak Tortilla Salad",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/low-calorie-meals-grilled-steak-tortilla-salad-ghk-0528-1556308536.jpg?crop=1xw:1xh;center,top&resize=980:*",
         "calories": 340,
         "totalTime": "20 mins",
@@ -91,7 +91,7 @@ export const data = [
     },
 
     {
-        "title": "Korean Pineapple Beef Lettuce Wraps",
+        "label": "Korean Pineapple Beef Lettuce Wraps",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/low-calorie-meals-korean-pineapple-beef-lettuce-wraps-1556309130.jpg?crop=1.00xw:1.00xh;0.00170xw,0&resize=980:*",
         "calories": "190 calories",
         "totalTime": "22 mins",
@@ -114,7 +114,7 @@ export const data = [
         "directions": "In medium bowl, combine pineapple juice, garlic, soy sauce, red pepper flakes, ginger, honey, and sesame oil. Thinly slice frozen meat, add to marinade and toss to coat. Let marinate 30 mins or cover and refrigerate up to 3 hours. Remove from refrigerator 30 mins before cooking.Heat large stainless steel skillet on medium-high. Add 1 tablespoon canola oil. Transfer half of beef mixture to skillet, arrange in even layer, season with 1/4 teaspoon salt and cook without moving until lightly browned, 1 minute. Toss beef and continue to cook until just cooked through and crisp at edges, 2 mins. Transfer to plate. Repeat with remaining tablespoon oil and beef. Serve immediately with lettuce leaves, sticky rice, scallions, chiles, and peanuts, if desired."
     },
     {
-        "title": "Chipotle Lentil Chili",
+        "label": "Chipotle Lentil Chili",
         "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/38/1474304680-ghk090115yk-chipotle-lentil.jpg?crop=0.874xw:0.875xh;0.124xw,0&resize=980:*",
         "calories": 310,
         "totalTime": "27 mins",
@@ -141,7 +141,7 @@ export const data = [
         "directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes: pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 mins. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
     },
     {
-        "title": "Zucchini Ravioli",
+        "label": "Zucchini Ravioli",
         "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190419-zucchini-ravioli-vertical-223-1558016038.jpg?crop=0.9997369113391213xw:1xh;center,top&resize=980:*",
         "calories": 220,
         "totalTime": "22 mins",
@@ -168,7 +168,7 @@ export const data = [
         "directions": "In food processor, puree chipotles, garlic, sun-dried tomatoes; pulse in whole peeled tomatoes until chopped. In pressure cooker in oil on medium, cook onion, green pepper, and chili powder. Add tomato mixture, broth, brown lentils, and salt. Lock lid; cook under high pressure 12 mins. Release pressure. Serve with avocado, cheddar, cilantro, tortilla chips."
     },
     {
-        "title": "Chicken Souvlaki Skewers",
+        "label": "Chicken Souvlaki Skewers",
         "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/29/1500576902-anna-williams-chicken-souvlaki-skewers-0817.jpg?crop=1xw:0.99975xh;center,top&resize=980:*",
         "calories": 220,
         "totalTime": "25 mins",
