@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Raleway;
 }
 .nav-bar {
   display: flex;
@@ -80,7 +81,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 50px;
-  width: 250px;
+  width: 275px;
+  height: 357px;
   
   /* height: 3px; */
 }
@@ -89,7 +91,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 20px;
+  /* margin: 183px; */
+  width: 90%;
+  
 
   
 }
@@ -101,6 +105,9 @@ footer {
 }
 .person-icon {
 padding-right: 3px;
+width: 10px;
+height: 12px;
+margin-top: 8px;
 }
 .rec-pic {
   width: 100%;
@@ -111,17 +118,20 @@ padding-right: 3px;
   display: flex;
   justify-content: space-between;
   border: 2px solid #E07A5F;
+  height: 77px;
+  font-size: 10px;
 
 }
 
 
 .searchBtn{
-  width: 320px;
+  width: 450px;
   height: 15px;
   font-size: 120%;
   margin-right: 1%;
   padding: 10px 30px;
   border: solid 2.5px black;
+  outline: none;
 
 }
 .submitBtn {
@@ -129,7 +139,7 @@ padding-right: 3px;
   /* padding: 1px 40px; */
   font-weight: 500;
   text-decoration: none;
-  border-radius: 1px;
+  border-radius: 3px;
   border: 3px solid #e07a5f;
   font-size: 15px;
   height: 40px;
@@ -137,11 +147,13 @@ padding-right: 3px;
   text-align: center;
   background-color: #e07a5f;
   color: white;
+  outline: none;
 }
 
 .item-page-container {
-/* height: 100vh; */
-  
+display: flex;  
+flex-direction: column;
+align-items: center;
 }
 
 .search-container{
@@ -157,20 +169,37 @@ form {
 
 
 }
-.rec-left,
-.rec-right{
-  padding: 5px;
+.rec-left
+{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+
 
 }
+
+.rec-right {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
 .diet-icons{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   
 }
 
 .diet-pic {
-  padding-right: 2px;
-  width: 30px;
+  padding-right: 6px;
+  padding-left: 6px;
+  width: 35px;
+  height: 35px;
+  margin-top: 8px;
 
 
 }
@@ -179,6 +208,10 @@ form {
 }
 .mobile-contact {
   display: none;
+}
+
+p {
+  padding-right: 20px;
 }
 
 

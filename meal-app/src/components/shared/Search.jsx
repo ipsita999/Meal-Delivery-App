@@ -30,7 +30,7 @@ class Search extends React.Component {
         return (
             <>
                 <form onSubmit={(e) => this.handleSubmit(e)}>
-                    <input className = "searchBtn" type='text' value={this.state.search} name='search' onChange={(e) => this.handleChange(e)}/>
+                    <input className = "searchBtn" type='text' value={this.state.search} autoComplete='off' name='search' onChange={(e) => this.handleChange(e)}/>
                     <input className = "submitBtn" type='submit' value='SEARCH'/>
                 </form>
           
