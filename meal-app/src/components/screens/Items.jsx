@@ -39,10 +39,15 @@ const Items = (props) => {
         <>
         <div className= 'diet-icons'>
             <img className ='diet-pic' src = {require('../../assets/Vegetarian-icon.png')} />
+            <p>Vegetarian</p>
             <img className ='diet-pic' src = {require('../../assets/vegan.png')} />
+            <p>Vegan</p>
             <img className ='diet-pic' src = {require('../../assets/gluten-free.png')} />
+            <p>Gluten-free</p>
             <img className ='diet-pic' src = {require('../../assets/nut-free.png')} />
+            <p>Nut-free</p>
             <img className ='diet-pic' src = {require('../../assets/dairy-free.png')} />
+            <p>Dairy-free</p>
         </div>
         <div className = 'item-page-container'>
            <div className ='search-container'><Search /></div> 
