@@ -1,11 +1,13 @@
 import React from 'react'
 import Search from '../shared/Search'
+import {withRouter} from 'react-router-dom'
 import './Items.css'
 
 const Items = (props) => {
 
     const handleSubmit = (item, id) => {
-        props.history.push(`results/${id}`, item)
+        console.log(item)
+        props.history.push(`/results/${id}`, item)
     }
 
     const renderItems = () => {
@@ -56,4 +58,4 @@ const Items = (props) => {
     )
 }
 
-export default Items
+export default withRouter(Items)

@@ -7,11 +7,11 @@ const handleSubmit = (props) => {
 }
 
 const Slide = (props) => {
-    const { item, id } = props
+    const { item } = props
     console.log(props)
     return (
         <div className="card" onClick={() => {handleSubmit(props)}}>
-            <img src={item.image} />
+            <img src={item.image} alt=""/>
             <p>{item.title}<span>{item.totalTime}</span></p>
         </div>
     )

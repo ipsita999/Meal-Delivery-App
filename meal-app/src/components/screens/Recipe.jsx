@@ -24,8 +24,8 @@ class Recipe extends React.Component {
 
     componentDidMount() {
         console.log(this)
-        this.state.item.ingredients.map((item, index) => {
-            this.setState(state => {
+        this.state.item.ingredientLines.map((item, index) => {
+            return this.setState(state => {
                 state.ingredients.push({ name: item, isChecked: true })
                 return state
             }
@@ -76,12 +76,12 @@ class Recipe extends React.Component {
 
 
                     <div className="item-view">
-                        <img className="food-image" src={this.state.item.image} alt="food image" />
+                        <img className="food-image" src={this.state.item.image} alt="food" />
                         <div className="item-info">
-                            <h3>{this.state.item.title}</h3>
+                            <h3>{this.state.item.label}</h3>
                             <div className="item-top">
                                 <div>
-                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>{this.state.item.totalTime}</p>
+                                    <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>{this.state.item.totalTime ? this.state.item.totalTime : `30 mins`}</p>
                                 </div>
                                 <div>
                                     <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="person" /><p>4</p>
