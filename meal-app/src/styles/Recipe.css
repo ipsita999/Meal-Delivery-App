@@ -90,3 +90,7 @@ ol li span {
     font-weight: bolder;
     align-self: flex-end;
 }
+
+.food-image {
+    width: 300px;
+}
