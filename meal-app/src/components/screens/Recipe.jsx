@@ -76,9 +76,9 @@ class Recipe extends React.Component {
 
 
                     <div className="item-view">
-                        <img src="https://s3-alpha-sig.figma.com/img/b2ce/086b/868c85535386a51bc6ee5f53010cfeb6?Expires=1577664000&Signature=JpiUqPzyMuTTDMbNN-9TW3IPw2ZK-w0afmHQhl3Q8clyqDJvdHgDc2bgZgy5lm3lA0sfkARlvPJPN4z7mk2PN88xK2~ksduJH0VHdKlZOhAsgi56UfFrRnahq82CaPk3P8~SLCgluRexeCqt2ugjgmkVUqI2n9Eg9SBjVw3IX243g3LjxKs-wDFokaXHqNBWhSDjne8M0esj~2i7D6X10b7S2jOwMXEoZcArewleMPkP8c3iM-diyYVVYA2GrrSZF~H-e~9FTiYcvi2CzbzAiUDT5Z5QZY5~dC84J7mIX~jRMZS9AXhEaGC7IEKgcR3tY2OZECADfllnveiNiEWLzQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="food image" />
+                        <img className="food-image" src={this.state.item.image} alt="food image" />
                         <div className="item-info">
-                            <h3>Name</h3>
+                            <h3>{this.state.item.title}</h3>
                             <div className="item-top">
                                 <div>
                                     <img className="timer-icon" src={require('../../assets/TIMER.png')} alt="timer" /><p>{this.state.item.totalTime}</p>

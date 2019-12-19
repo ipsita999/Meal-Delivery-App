@@ -23,6 +23,10 @@ class Home extends React.Component {
         this.setState({ isActive: !this.state.isActive })
     }
 
+    handleSubmit = (item, id) => {
+        this.props.history.push(`results/${id}`, item)
+    }
+
 
     render() {
         return (
@@ -54,37 +58,37 @@ class Home extends React.Component {
                     <button className='arrow' onClick={this.handleClick}><img src={leftArrow} alt='arrow' /></button>
                     {this.state.isActive ?
                         <div className='slide one'>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[0], 0)}}>
                                 <img src={data[0].image} alt='slide 0' />
                                 <p>{data[0].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[1], 1)}}>
                                 <img src={data[1].image} alt='slide 1' />
                                 <p>{data[1].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[2], 2)}}>
                                 <img src={data[2].image} alt='slide 2' />
                                 <p>{data[2].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[3], 3)}}>
                                 <img src={data[3].image} alt='slide 3' />
                                 <p>{data[3].title}</p>
                             </div>
                         </div> :
                         <div className='slide two'>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[4], 4)}}>
                                 <img src={data[4].image} alt='slide 4' />
                                 <p>{data[4].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[5], 5)}}>
                                 <img src={data[5].image} alt='slide 5' />
                                 <p>{data[5].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[6], 6)}}>
                                 <img src={data[6].image} alt='slide 6' />
                                 <p>{data[6].title}</p>
                             </div>
-                            <div className='card'>
+                            <div className='card' onClick={() => {this.handleSubmit(data[7], 7)}}>
                                 <img src={data[7].image} alt='slide 7' />
                                 <p>{data[7].title}</p>
                             </div>
