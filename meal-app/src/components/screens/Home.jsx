@@ -9,17 +9,20 @@ import step2 from '../../assets/STEP2-RECIPE.png'
 import step3 from '../../assets/STEP3-INGREDIENTS.png'
 import arrow from '../../assets/arrow.png'
 
+import Container from '../carousel/Container'
+
 class Home extends React.Component {
     constructor(props) {
         super(props)
-        this.state= {
-            isActive: false
+        this.state = {
+            isActive: false,
         }
     }
 
     handleClick = () => {
-        this.setState({isActive: !this.state.isActive})
+        this.setState({ isActive: !this.state.isActive })
     }
+
 
     render() {
         return (
@@ -27,65 +30,66 @@ class Home extends React.Component {
                 <h2>Cook Faster With Prepped Ingredients</h2>
                 <div className='steps'>
                     <div className='step-1'>
-                        <img src={step1} alt='step one'/>
+                        <img src={step1} alt='step one' />
                         <h3>STEP 1</h3>
                         <p>Search For Recipe</p>
                     </div>
-                    <img className='between' src={arrow} alt='arrow'/>
+                    <img className='between' src={arrow} alt='arrow' />
                     <div className='step-2'>
-                        <img src={step2} alt='step two'/>
+                        <img src={step2} alt='step two' />
                         <h3>STEP 2</h3>
                         <p>Select Recipe</p>
                     </div>
-                    <img className='between' src={arrow} alt='arrow'/>
+                    <img className='between' src={arrow} alt='arrow' />
                     <div className='step-3'>
-                        <img src={step3} alt='step three'/>
+                        <img src={step3} alt='step three' />
                         <h3>STEP 3</h3>
                         <p>Order Ingredients</p>
                     </div>
                 </div>
                 <Search />
                 <h4>Top Recipes</h4>
-                <div className='carousel'>
-                    <button className='arrow' onClick={this.handleClick}><img src={leftArrow} alt='arrow'/></button>
-                    {this.state.isActive ? 
-                    <div className='slide one'>
-                        <div className='card'>
-                            <img src={data[0].image} alt='slide 0'/>
-                            <p>{data[0].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[1].image} alt='slide 1'/>
-                            <p>{data[1].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[2].image} alt='slide 2'/>
-                            <p>{data[2].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[3].image} alt='slide 3'/>
-                            <p>{data[3].title}</p>
-                        </div>
-                    </div> : 
-                    <div className='slide two'>
-                        <div className='card'>
-                            <img src={data[4].image} alt='slide 4'/>
-                            <p>{data[4].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[5].image} alt='slide 5'/>
-                            <p>{data[5].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[6].image} alt='slide 6'/>
-                            <p>{data[6].title}</p>
-                        </div>
-                        <div className='card'>
-                            <img src={data[7].image} alt='slide 7'/>
-                            <p>{data[7].title}</p>
-                        </div>
-                    </div>}
-                    <button className='arrow' onClick={this.handleClick}><img src={rightArrow} alt='arrow'/></button>
+                <Container data={data}/>
+                <div className='carousel desktop'>
+                    <button className='arrow' onClick={this.handleClick}><img src={leftArrow} alt='arrow' /></button>
+                    {this.state.isActive ?
+                        <div className='slide one'>
+                            <div className='card'>
+                                <img src={data[0].image} alt='slide 0' />
+                                <p>{data[0].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[1].image} alt='slide 1' />
+                                <p>{data[1].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[2].image} alt='slide 2' />
+                                <p>{data[2].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[3].image} alt='slide 3' />
+                                <p>{data[3].title}</p>
+                            </div>
+                        </div> :
+                        <div className='slide two'>
+                            <div className='card'>
+                                <img src={data[4].image} alt='slide 4' />
+                                <p>{data[4].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[5].image} alt='slide 5' />
+                                <p>{data[5].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[6].image} alt='slide 6' />
+                                <p>{data[6].title}</p>
+                            </div>
+                            <div className='card'>
+                                <img src={data[7].image} alt='slide 7' />
+                                <p>{data[7].title}</p>
+                            </div>
+                        </div>}
+                    <button className='arrow' onClick={this.handleClick}><img src={rightArrow} alt='arrow' /></button>
                 </div>
             </div>
         )
