@@ -35,9 +35,13 @@ h4 {
 }
 .arrow {
     border: none;
+    background-color: white;
+    outline: none;
 }
 .arrow img {
     width: 40px;
+    cursor: pointer;
+
 }
 .steps {
     display: flex;
