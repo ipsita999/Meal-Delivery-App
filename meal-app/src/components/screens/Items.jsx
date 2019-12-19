@@ -8,7 +8,7 @@ const Items = (props) => {
         return props.location.state.items.map(item => (
             <>
                 <h3>{item.recipe.label}</h3>
-                <img src={item.recipe.image} />
+                <img src={item.recipe.image} alt=""/>
             </>
         ))
     }

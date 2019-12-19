@@ -25,7 +25,7 @@ class Recipe extends React.Component {
     componentDidMount() {
         console.log(this)
         this.state.item.ingredients.map((item, index) => {
-            this.setState(state => {
+            return this.setState(state => {
                 state.ingredients.push({ name: item, isChecked: true })
                 return state
             }
@@ -76,7 +76,7 @@ class Recipe extends React.Component {
 
 
                     <div className="item-view">
-                        <img className="food-image" src={this.state.item.image} alt="food image" />
+                        <img className="food-image" src={this.state.item.image} alt="food" />
                         <div className="item-info">
                             <h3>{this.state.item.title}</h3>
                             <div className="item-top">
