@@ -26,6 +26,15 @@ const Footer = () => {
                 <p>support@noprepmeals.com</p>
                 <p>+1(800)-457-8793</p>
             </div>
+            <div className='mobile-footer'>
+                <p className='mobile-contact'>support@noprepmeals.com</p>
+                <p className='mobile-contact'>+1(800)-457-8793</p>
+                <div className="media-icon-mobile">
+                    <img src={fb} alt="" className='social' />
+                    <img src={twitter} alt="" className='social' />
+                    <img src={insta} alt="" className='social' />
+                </div>
+            </div>
         </footer>
     )
 }
