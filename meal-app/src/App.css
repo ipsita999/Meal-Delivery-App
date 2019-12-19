@@ -1,11 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .nav-bar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #F4F1DF;
+  color: #3D415A;
+  font-weight: bold;
+  font-size: 18px;
+  height: 69px;
+}
+.nav-bar p {
+  flex: 1;
+  display: block;
+}
+.nav-bar img {
+  width: 50px;
+  margin:0 20px;
+}
+.nav-bar .cart {
+  width: 30px;
+}
+.nav-bar .hamburger {
+  display: none;
 }
 .nav-link {
   text-decoration: none;
+  color: #3D415A;
+  font-size: 24px;
+  flex: 3;
+  display: block;
 }
 
 /* Start Footer */
@@ -17,10 +43,12 @@ footer {
   background-color: #3D415A;
   height: 200px;
   color: white;
+  width: 100%;
 }
 .footer {
   display: flex;
   align-items: center;
+  margin: 0 48px;
 }
 .footer.left img {
   height: 60px;
@@ -43,6 +71,7 @@ footer {
 .footer.right p {
   margin: 0 16px 16px 0;
 }
+
 
 .item-container {
   font-family: Raleway;
@@ -147,4 +176,30 @@ form {
 }
 
 
+
+
+@media only screen and (max-width: 420px) {
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar p {
+    display: none;
+    flex: 0;
+  }
+  .nav-link {
+    display: none;
+    flex: 0;
+  }
+  .nav-bar .logo {
+    margin: auto;
+  }
+  .nav-bar .hamburger {
+    display: block;
+    max-width: 30px;
+  }
+  .dropdown {
+    position: absolute;
+  }
+}
 

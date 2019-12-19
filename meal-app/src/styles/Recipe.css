@@ -1,26 +1,25 @@
-/* * {
-    border: 1px solid red;
-} */
 /* Results Container */
 .results {
     display: flex;
     flex-wrap: wrap;
     font-family: Raleway;
     font-size: 21px;
-    margin: 0 17px;
+    margin: 44px 17px 75px 17px;
+    flex: 1;
 }
 /* Main Area */
 .main {
     flex: 3;
 }
 /* Aside */
-.ingredient-list {
-    flex: 1;
+.ingredients-list {
+    flex: 0 1 335px;
 }
 /* container for top section of main */
 .item-view {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 /* Item name */
 .item-info h3 {
@@ -59,16 +58,39 @@
 
 /* Removing the default ol numbers and adding custom ones */
 ol li {
-    counter-increment: list;
-    list-style-type: none;
-    position: relative;
-  }
-ol li:before {
     color: #DE7A63;
-    content: counter(list) ".";
-    left: -32px;
-    position: absolute;
-    text-align: right;
-    width: 26px;
-    font-size: 21px;
-  }
+    margin-bottom: 36px;
+}
+ol li span {
+    color: black;
+    font-family: "Open Sans";
+}
+/* ingredients checkbox */
+.ingredients-list h3 {
+    font-size: 36px;
+    color: #82B29B;
+    text-align: center;
+}
+.ingredients-list div input {
+    margin-right: 28px;
+    color: #DE7A63;
+}
+.cart-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.to-cart {
+    background-color: #DE7A73;
+    color: white;
+    border-radius: 3px;
+    width: 250px;
+    height: 44px;
+    font-size: large;
+    font-weight: bolder;
+    align-self: flex-end;
+}
+
+.food-image {
+    width: 300px;
+}

@@ -11,6 +11,9 @@
     margin-bottom: 60px;
 
 }
+.card {
+    cursor: pointer;
+}
 .card img {
     width: 200px;
     margin: 0;
@@ -28,12 +31,17 @@ h4 {
     font-family: Raleway;
     font-size: 40px;
     font-weight: 800;
+    color: #3D415A;
 }
 .arrow {
     border: none;
+    background-color: white;
+    outline: none;
 }
 .arrow img {
     width: 40px;
+    cursor: pointer;
+
 }
 .steps {
     display: flex;
@@ -53,9 +61,50 @@ h2 {
     font-family: Raleway;
     font-size: 40px;
     font-weight: 800;
+    color: #3D415A;
 }
 .steps .between {
     width: 70px;
     height: 70px;
     margin-bottom: 70px;
+}
+
+/* mobile carousel */
+.carousel-container {
+    display: flex;
+}
+.arr {
+    display: flex;
+    align-content: center;
+}
+.card p span {
+    text-align: right;
+}
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+    h4,h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h2 {
+        margin: 70px;
+    }
+    .steps img {
+        max-width: 80px;
+    }
+    .steps .between {
+        max-width: 30px;
+        max-height: 30px;
+        margin-bottom: 100px;
+    }
 }

@@ -1,16 +1,44 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../../assets/logo-blue.png'
+import cart from '../../assets/cart.png'
+import hamburger from '../../assets/HAMBURGER.png'
 
-const Nav = () => {
-    return (
-        <div className='nav-bar'>
-        <NavLink className='nav-link' to='/'>NO PREP MEALS</NavLink>
-        <p>RECIPES</p>
-        <p>ABOUT</p>
-        <p>CONTACT</p>
-        <p>MY PROFILE</p>
-        </div>
-    )
+class Nav extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+            display: 'none'
+        }
+    }
+
+    handleClick = () => {
+        console.log('working')
+        this.setState({display: 'block'})
+    }
+    render() {
+        return (
+            <div className='nav-bar'>
+                <div className='hamburger-dropdown'>
+                    <button onClick={this.handleClick}><img className='hamburger' src={hamburger} alt='hamburger'/></button>
+                    <div className='dropdown' style={{position: 'absolute', display: this.state.display}}>
+                        <p>RECIPES</p>
+                        <p>ABOUT</p>
+                        <p>CONTACT</p>
+                        <p>MY PROFILE</p>
+                    </div>
+                </div>
+                <img className='logo' src={logo} alt='logo'/>
+                <NavLink className='nav-link' to='/'>NO PREP MEALS</NavLink>
+                <p>RECIPES</p>
+                <p>ABOUT</p>
+                <p>CONTACT</p>
+                <p>MY PROFILE</p>
+                <img className='cart' src={cart} alt='cart'/>
+            </div>
+        )
+    }
 }
 
 export default Nav
