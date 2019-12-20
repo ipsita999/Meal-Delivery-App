@@ -118,7 +118,7 @@ ol li span {
         justify-content: center;
     }
     .food-image {
-        display: none;
+        width: 80vw;
     }
     .item-info {
         margin: 0;
