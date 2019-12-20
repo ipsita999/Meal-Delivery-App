@@ -18,7 +18,8 @@ class Recipe extends React.Component {
                 'Wrap a sheet of parchment paper around the top of the lasagna (or cover the lasagna with aluminum foil, but don’t let the foil touch the cheese). Bake, covered, for 18 minutes, then remove the cover, rotate the pan by 180° and continue cooking for about 10 to 12 more minutes, until the top is turning spotty brown.',
                 'Remove from oven and let the lasagna cool for 15 to 20 minutes, so it has time to set and cool down to a reasonable temperature. Sprinkle additional basil over the top, then slice and serve.'
             ],
-            item: this.props.location.state
+            item: this.props.location.state,
+            showMobileInstructions: false
         }
     }
 
@@ -63,6 +64,9 @@ class Recipe extends React.Component {
             })
         }
     }
+    toggleInstructions = () => {
+        this.setState(state => ({ showMobileInstructions: !state.showMobileInstructions }))
+    }
 
     renderInstructions = () => {
         return this.state.instructions.map((step, index) => (
@@ -98,8 +102,11 @@ class Recipe extends React.Component {
                         </div>
                     </div>
                     <div className="item-description">
-                        <h2>Instructions</h2>
-                        <ol>
+                        <div className="instructions-head" onClick={() => this.toggleInstructions()}>
+                            <h2 >Instructions</h2>
+                            <img className="small-arrow" src={this.state.showMobileInstructions ? require('../../assets/Arrow-up.png') : require('../../assets/Arrow-down.png')} alt=""/>
+                        </div>
+                        <ol className={`instruction-list ${this.state.showMobileInstructions ? "show" : "hide"}`}>
                             {this.renderInstructions()}
                         </ol>
                     </div>
