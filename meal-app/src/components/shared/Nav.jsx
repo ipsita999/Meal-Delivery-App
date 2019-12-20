@@ -21,13 +21,7 @@ class Nav extends React.Component {
         return (
             <div className='nav-bar'>
                 <div className='hamburger-dropdown'>
-                    <button onClick={this.handleClick}><img className='hamburger' src={hamburger} alt='hamburger'/></button>
-                    <div className='dropdown' style={{position: 'absolute', display: this.state.display}}>
-                        <p>RECIPES</p>
-                        <p>ABOUT</p>
-                        <p>CONTACT</p>
-                        <p>MY PROFILE</p>
-                    </div>
+                    <img className='hamburger' src={hamburger} alt='hamburger'/>
                 </div>
                 <img className='logo' src={logo} alt='logo'/>
                 <NavLink className='nav-link' to='/'>NO PREP MEALS</NavLink>
