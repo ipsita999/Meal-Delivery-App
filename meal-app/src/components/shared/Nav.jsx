@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/logo-blue.png'
 import cart from '../../assets/cart.png'
 import hamburger from '../../assets/HAMBURGER.png'
@@ -23,7 +23,7 @@ class Nav extends React.Component {
                 <div className='hamburger-dropdown'>
                     <img className='hamburger' src={hamburger} alt='hamburger'/>
                 </div>
-                <img className='logo' src={logo} alt='logo'/>
+                <Link to='/'><img className='logo' src={logo} alt='logo'/></Link>
                 <NavLink className='nav-link' to='/'>NO PREP MEALS</NavLink>
                 <p>RECIPES</p>
                 <p>ABOUT</p>
