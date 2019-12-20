@@ -17,11 +17,17 @@ const Items = (props) => {
                     <img className = "rec-pic" src={item.recipe.image} />
                     <div className ='info-box'>
                     <div className='rec-left'>
-                        <h3>{item.recipe.label}</h3>
+                        <h3 className= "rec-title">{item.recipe.label}</h3>
+                        <div className= 'diet-sec'>
+                       <h5>{item.recipe.healthLabels.includes('Vegetarian') ?
+                         <img className ='diet-pics' src = {require('../../assets/Vegetarian-icon.png')} /> : null} </h5>
+                       <h5>{item.recipe.healthLabels.includes('Peanut-Free') ?
+                         <img className ='diet-pics' src = {require('../../assets/nut-free.png')} /> : null} </h5>
+                        </div>
+
                     </div>
                     <div className='rec-right'>
-                        <h5> {item.recipe.totalTime > 0 ? item.recipe.totalTime : 20} mins</h5>
-                        {/* <h5> {item.recipe.totalTime}mins</h5> */}
+                        <h5 className = 'time'> {item.recipe.totalTime > 0 ? item.recipe.totalTime : 20} mins</h5>
                         
                         <div className = "cook-time">
                             <img className="person-icon" src={require('../../assets/SERVINGS (PERSON ICON).png')} alt="" /><p>{item.recipe.yield}</p>
