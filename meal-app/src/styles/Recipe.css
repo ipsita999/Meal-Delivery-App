@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 /* Results Container */
 .results {
     display: flex;
@@ -107,4 +107,55 @@ ol li span {
 
 .food-image {
     width: 300px;
+}
+.small-arrow {
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .results {
+        margin: 0;
+        justify-content: center;
+    }
+    .food-image {
+        display: none;
+    }
+    .item-info {
+        margin: 0;
+    }
+    .item-description {
+        margin: 0;
+    }
+    .instruction-list.hide {
+        display: none;
+    }
+    .instruction-list.show {
+        display: block;
+    }
+    .ingredients-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .instructions-head {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        border: 2px solid #3D415A;
+        justify-content: space-between;
+    }
+    .instructions-head h2 {
+        margin: 20px 0;
+        padding: 0 30px;
+        font-size: 24px;
+        color: #3D415A;
+    }
+    .small-arrow {
+        display: block;
+        width: 40px;
+        height: 24px;
+        align-self: center;
+        margin-right: 42px;
+    }
+
 }
